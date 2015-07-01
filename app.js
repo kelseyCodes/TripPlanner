@@ -22,9 +22,11 @@ app.use(sass({
 	dest: __dirname + '/public',
 	debug: true
 }))
+app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+
 
 // catch 404 (i.e., no route was hit) and forward to error handler
 app.use(function(req, res, next) {

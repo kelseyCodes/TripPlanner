@@ -1,1 +1,113 @@
-<h1> {{all_hotels}} </h1>
+{% extends "layout.html" %}
+
+{% block content %}
+<nav class="navbar navbar-default navvy"> </nav>
+
+
+<div class="row">
+  <div class="col-xs-6 col-md-4 options">
+  
+  	<div class="dropdown ddmenus">
+  		
+  		<label class= "listNames"> Hotels </label>
+
+  		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   		 Hotels
+   			 <span class="caret"></span>
+  		</button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		 <!--    <li><a href="#">Action</a></li> SWIG TEMPLATE FOR HOTELS HERE-->
+		  </ul>
+		  <button class="btn btn-default buttony" type="submit">X</button>
+	</div>
+
+	<div class="dropdown ddmenus">
+  		
+  		<label class= "listNames"> Restaurants </label>
+
+  		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   		 Restaurants
+   			 <span class="caret"></span>
+  		</button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		 <!--    <li><a href="#">Action</a></li> SWIG TEMPLATE FOR HOTELS HERE-->
+		  </ul>
+		  <button class="btn btn-default buttony" type="submit">X</button>
+	</div>
+
+	<div class="dropdown ddmenus">
+  		
+  		<label class= "listNames"> Things To Do </label>
+
+  		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   		 Things To Do
+   			 <span class="caret"></span>
+  		</button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		 <!--    <li><a href="#">Action</a></li> SWIG TEMPLATE FOR HOTELS HERE-->
+		  </ul>
+		  <button class="btn btn-default buttony" type="submit">X</button>
+	</div>
+
+
+  </div>
+</div>
+
+<div class="row">
+<div class="text">
+Day 2
+</div>
+</div>
+
+
+<div class="row">
+  	<div class="col-xs-6 col-md-4 myDay">
+  
+  	<div class="dayButtons">
+  		<button class="btn btn-default buttony" type="submit">1</button>
+  		<button class="btn btn-default buttony" type="submit">2</button>
+  		<button class="btn btn-default buttony" type="submit">3</button>
+  		<button class="btn btn-default buttony" type="submit">+</button>
+  	</div>
+
+  
+		<div>
+  			<label class= "listNames"> Hotels </label>
+
+			  <ul>
+			 	<li>hotel</li>
+			  </ul>
+
+			  <button class="btn btn-default buttony" type="submit">X</button>
+		</div>
+
+
+  		<div>
+	  		<label class= "listNames"> Restaurants </label>
+
+			  <ul>
+			 	<li>restaurant</li>
+			  </ul>
+
+			  <button class="btn btn-default buttony" type="submit">X</button>
+		</div>
+
+
+
+  		<div>
+	  		<label class= "listNames"> Things To Do </label>
+
+			  <ul>
+			 	<li>thing to do</li>
+			  </ul>
+
+			  <button class="btn btn-default buttony" type="submit">X</button>
+		 </div>
+
+
+  </div>
+</div>
+
+
+
+{% endblock %}
